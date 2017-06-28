@@ -11,88 +11,7 @@
 
 
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.css" />
-	<style>
-
-	/* Style for our header texts
-	* --------------------------------------- */
-	h1{
-		font-size: 5em;
-		font-family: arial,helvetica;
-		color: #fff;
-		margin:0;
-		padding:0;
-	}
-
-	/* Centered texts in each section
-	* --------------------------------------- */
-	.section{
-		text-align:center;
-	}
-
-
-	/* Backgrounds will cover all the section
-	* --------------------------------------- */
-	.section{
-		background-size: cover;
-	}
-	.slide{
-		background-size: cover;
-	}
-
-	/* Defining each section background and styles
-	* --------------------------------------- */
-	#section0{
-		background-image: url(imgs/bg1.jpg);
-	}
-	#section0 h1{
-		top: 50%;
-		transform: translateY(-50%);
-		position: relative;
-	}
-	#section2{
-		background-image: url(imgs/bg3.jpg);
-		padding: 6% 0 0 0;
-	}
-	#section3{
-		background-image: url(imgs/bg4.jpg);
-		padding: 6% 0 0 0;
-	}
-	#section3 h1{
-		color: #000;
-	}
-
-
-	/*Adding background for the slides
-	* --------------------------------------- */
-	#slide1{
-		background-image: url(imgs/bg2.jpg);
-		padding: 6% 0 0 0;
-	}
-	#slide2{
-		background-image: url(imgs/bg5.jpg);
-		padding: 6% 0 0 0;
-	}
-
-
-	/* Bottom menu
-	* --------------------------------------- */
-	#infoMenu li a {
-		color: #fff;
-	}
-
-	div.transbox {
-	  margin: 4em;
-	  margin-right: 20%;
-	  margin-left: 20%;
-	  background-color: #ffffff;
-	  opacity: 0.6;
-	  padding: 1em;
-	  overflow-y: scroll;
-	  height: 40%;
-	  max-height: 40%;
-	  filter: alpha(opacity=60); /* For IE8 and earlier */
-	}
-	</style>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 	<!--[if IE]>
 		<script type="text/javascript">
@@ -104,19 +23,28 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.js"></script>
 
 	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				verticalCentered: false
+			$(document).ready(function() {
+				$('#fullpage').fullpage({
+					anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+					menu: '#menu',
+					scrollingSpeed: 1000,
+					verticalCentered: false
+				});
 			});
-		});
-	</script>
+		</script>
 
 </head>
 <body>
 
+<ul id="menu">
+	<li data-menuanchor="firstPage"><a href="#firstPage">First slide</a></li>
+	<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
+	<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
+	<li data-menuanchor="4thpage"><a href="#4thpage">Fourth slide</a></li>
+</ul>
 
 <div id="fullpage">
-	<div class="section " id="section0"><h1>fullPage.js</h1></div>
+	<div class="section " id="section0"><h1>Felicity'18</h1></div>
 	<div class="section" id="section1">
 		<div class="slide" id="slide1">
 			<h1>Head</h1>
