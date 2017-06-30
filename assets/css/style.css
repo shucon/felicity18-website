@@ -120,3 +120,10 @@ div.transbox {
 	padding: 0;
 	margin:0;
 }
+.header{
+	font-family: 'Lato', sans-serif;
+}
+.tagline{
+	font-family: 'Permanent Marker', cursive;
+	color: rgb(255, 255, 255);
+}
