@@ -72,10 +72,11 @@ div.transbox {
   background-color: #ffffff;
   opacity: 0.6;
   padding: 1em;
-  overflow-y: scroll;
-  height: 40%;
-  max-height: 40%;
+  /*overflow-y: scroll;*/
+  /*height: 40%;*/
+  /*max-height: 40%;*/
   filter: alpha(opacity=60); /* For IE8 and earlier */
+  margin-bottom: 5em;
 }
 
 #menu li {

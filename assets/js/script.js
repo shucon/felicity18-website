@@ -3,6 +3,7 @@ $(document).ready(function() {
 					anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
 					menu: '#menu',
 					scrollingSpeed: 1000,
-					verticalCentered: false
+					verticalCentered: false,
+					scrollOverflow: true
 				});
 			});
